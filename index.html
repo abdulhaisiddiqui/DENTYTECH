@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- gsap -->
+     <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"rel="stylesheet"/>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <div class="nav-part1">
+                <h3>Menu</h3>
+                <i class="ri-menu-3-line"></i>
+            </div>
+            <div class="nav-part2">
+                <h1>Dentytech</h1>
+            </div>
+            <div class="nav-part3">
+                <button class="log"><a href="Log-in.php">Log In</a></button>
+                <button id="btn2">Sign Up</button>
+            </div>
+        </div>
+        <h1 id="our">Our Advantages</h1>
+        <img id="img1" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bW9kZWx8ZW58MHx8MHx8fDA%3D" alt="">
+        <img id="img2" src="https://images.unsplash.com/photo-1622445275992-e7efb32d2257?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        <img id="img3" src="https://plus.unsplash.com/premium_photo-1690349404224-53f94f20df8f?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        <img id="img4" src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bW9kZWx8ZW58MHx8MHx8fDA%3D" alt="">
+        <h5 id="btm-left">Your Smile, Our Passion</h5>
+
+    </div>
+    <!-- Javascript using gsap -->
+    <script>
+        
+        TweenMax.staggerFrom(".nav .nav-part1" , 1,{
+            opacity:0,
+            delay:0.5,
+            x: -20,
+            ease: Expo.easeInOut,
+        })
+        TweenMax.staggerFrom(".nav .nav-part2" , 1,{
+            opacity:0,
+            delay:1,
+            x: -100,
+            ease: Expo.easeInOut,
+        })
+        TweenMax.staggerFrom(".nav .nav-part3" , 1,{
+            opacity:0,
+            delay:1.5,
+            x: -200,
+            ease: Expo.easeInOut,
+        })
+        TweenMax.from("#our" , 1,{
+            opacity:0,
+            delay:0.05,
+            y: -300,
+            ease: Expo.easeInOut,
+        })
+        TweenMax.from("#img1" , 2,{
+            opacity:0,
+            delay:0.07,
+            rotation:'360',
+            // x: 300,
+            ease: Expo.easeInOut,
+        })
+        TweenMax.from("#img2" , 2,{
+            opacity:0,
+            delay:0.20,
+            rotation:'360',
+            // x: 300,
+            ease: Expo.easeInOut,
+        })
+        TweenMax.from("#img3" , 2,{
+            opacity:0,
+            delay:0.30,
+            rotation:'360',
+            // x: 300,
+            ease: Expo.easeInOut,
+        })
+        TweenMax.from("#img4" , 2,{
+            opacity:0,
+            delay:0.38,
+            rotation:'360',
+            // x: 300,
+            ease: Expo.easeInOut,
+        })
+        TweenMax.staggerFrom("#btm-left" , 1,{
+            opacity:0,
+            delay:0.5,
+            x: -20,
+            ease: Expo.easeInOut,
+        })
+        
+    </script>
+</body>
+</html>
